@@ -14,16 +14,6 @@ Ein kleines Python-Tool (läuft auf macOS) mit **Qt-GUI** (via
 4. Export der erkannten Konturen als **DXF-Datei** (mm-Einheiten), die
    sich in jedem CAD-Programm öffnen lässt
 
-## Warum Qt statt Tkinter?
-
-Die erste Version nutzte Tkinter. Auf macOS zeigte sich dabei oft ein
-komplett leeres/graues Fenster – Ursache ist die veraltete, von Apple
-mitgelieferte Tcl/Tk-Bibliothek (Version 8.5), die unter neueren macOS-
-Versionen bekannte Rendering-Probleme hat (leere Fenster, Einfrieren).
-Die GUI wurde deshalb komplett auf **Qt** (über `qtpy`, mit PySide6 als
-Backend) umgestellt – das rendert zuverlässig und nativ auf macOS.
-(Die alte Tkinter-Version liegt zur Referenz noch in
-`app_tkinter_backup.py`, wird aber nicht mehr gepflegt.)
 
 ## Installation (einmalig)
 
